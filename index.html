@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ir a Google</title>
+    <!-- Incluye el CDN de Tailwind CSS para un diseño moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define la fuente Inter para un estilo consistente */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="text-center p-8 bg-white rounded-xl shadow-lg">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+            Página de ejemplo
+        </h1>
+        <p class="text-gray-600 mb-8 max-w-sm">
+            Haz clic en el botón de abajo para ser redirigido a la página de inicio de Google.
+        </p>
+        <!--
+            El botón usa JavaScript para abrir el enlace en una nueva pestaña.
+            La clase `target="_blank"` por sí sola no es suficiente para abrir en una nueva pestaña.
+        -->
+        <button
+            id="googleButton"
+            class="
+                px-6 py-3
+                bg-blue-600 text-white
+                rounded-full
+                font-semibold
+                shadow-lg
+                hover:bg-blue-700
+                focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50
+                transition duration-300 ease-in-out
+                transform hover:scale-105
+            "
+            onclick="window.open('https://www.pornhub.com/view_video.php?viewkey=688b23a4579af', '_blank');"
+        >
+            Ir a Google
+        </button>
+    </div>
+</body>
+</html>
